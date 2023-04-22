@@ -1,3 +1,5 @@
+require 'spec_helper'
+
 describe "#factorial" do
     context "when given a positive integer" do
       it "returns the correct factorial" do
