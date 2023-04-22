@@ -12,4 +12,8 @@ class Solver
       return result
     end
   end
+
+  def reverse(value)
+    return value.reverse
+  end
 end
