@@ -1,4 +1,4 @@
-RSpec.describe "#factorial" do
+describe "#factorial" do
     context "when given a positive integer" do
       it "returns the correct factorial" do
         expect(factorial(5)).to eq(120)
@@ -20,4 +20,19 @@ RSpec.describe "#factorial" do
       end
     end
 end
+
+describe "#reverse" do
+    context "when given a word" do
+      it "reverses the word" do
+        expect(reverse("hello")).to eq("olleh")
+        expect(reverse("world")).to eq("dlrow")
+        expect(reverse("ruby")).to eq("ybur")
+      end
+    end
   
+    context "when given an empty string" do
+      it "returns an empty string" do
+        expect(reverse("")).to eq("")
+      end
+    end
+end
