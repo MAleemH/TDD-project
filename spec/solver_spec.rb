@@ -36,3 +36,14 @@ describe "#reverse" do
       end
     end
 end
+
+describe "#fizzbuzz" do
+    context "when given an integer" do
+      it "returns the correct string" do
+        expect(fizzbuzz(3)).to eq("fizz")
+        expect(fizzbuzz(5)).to eq("buzz")
+        expect(fizzbuzz(15)).to eq("fizzbuzz")
+        expect(fizzbuzz(7)).to eq("7")
+      end
+    end
+end
